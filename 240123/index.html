@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini game Self</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <img src="./assets/bg1.png" id="bg1-img" class="asset-img" />
+  <img src="./assets/bg2.png" id="bg2-img" class="asset-img" />
+  <img src="./assets/bg3.png" id="bg3-img" class="asset-img" />
+  <img src="./assets/wall.png" id="wall-img" class="asset-img" />
+  <img src="./assets/bird.png" id="bird-img" class="asset-img" />
+  <img src="./assets/coin.png" id="coin-img" class="asset-img" />
+
+  <main>
+    <section class="ready-screen">
+      <!-- <img src="./assets/title.png" alt="title" class="title-img"> -->
+      <div class="title-img">
+        Flying bug
+      </div>
+      <img src="./assets/play.svg" alt="play" class="play-img">
+    </section>
+    <section class="finish-screen">
+      <div class="distance">0m</div>
+      <div class="coin">0 coin</div>
+      <img src="./assets/replay.svg" alt="replay" class="replay-img">
+    </section>
+    <canvas></canvas>
+  </main>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
